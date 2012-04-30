@@ -1,0 +1,15 @@
+<form action="." method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form }}
+  <input type="submit" />
+</form>
+
+{% for some in some_list %}
+<div>{{ some.test }}</div>
+<div>
+  <a href="{{ some.element.url }}">
+    {{ some.element.file.name }}
+  </a>
+</div>
+{% endfor %}
+
