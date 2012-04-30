@@ -1,2 +1,4 @@
 .appengine
 *.db
+appengine_libs
+rocket_engine
