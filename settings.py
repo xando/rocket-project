@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'rocket_engine',
+    # 'south',
 
     'test'
 )
