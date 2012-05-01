@@ -1,1 +1,5 @@
-django-taggit
+# requirements.txt
+django-tastypie
+django-taggit>=0.4
+git+git://github.com/alex/django-taggit.git
+git+git://github.com/jezdez/django-dbtemplates.git@master
