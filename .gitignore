@@ -2,3 +2,6 @@
 *.db
 appengine_libs
 rocket_engine
+*.pyc
+build
+

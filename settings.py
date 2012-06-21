@@ -1,4 +1,5 @@
-from rocket_engine import on_appengine
+import os
+from rocket_engine import on_appengine, PROJECT_DIR
 
 if on_appengine:
     DATABASES = {
@@ -21,11 +22,10 @@ DEFAULT_FILE_STORAGE = 'rocket_engine.storage.BlobStorage'
 DEBUG = not on_appengine
 TEMPLATE_DEBUG = DEBUG
 
-
 ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (
-    'templates'
+    os.path.join(PROJECT_DIR, 'templates'),
 )
 
 INSTALLED_APPS = (
@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'rocket_engine',
     # 'south',
 
-    'test'
+    'core'
 )
 
 SITE_ID = 1
