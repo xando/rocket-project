@@ -18,6 +18,7 @@ else:
     }
 
 DEFAULT_FILE_STORAGE = 'rocket_engine.storage.BlobStorage'
+DEFAUTL_EMAIL_BACKEND = 'rocket_engine.mail.EmailBackend'
 
 DEBUG = not on_appengine
 TEMPLATE_DEBUG = DEBUG
